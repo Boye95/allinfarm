@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Signup from "./pages/auth/signup";
 import Signin from "./pages/auth/signin";
+import DashboardLayout from "./pages/dashboard";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/signin",
     element: <Signin />,
+  },
+  {
+    path: "/dashboard",
+    element: <DashboardLayout />,
   }
 ]);
 
